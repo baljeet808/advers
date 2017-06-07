@@ -25,6 +25,7 @@ public class StartShowcase extends AhoyOnboarderActivity {
             finish();
         }*/
 
+
         AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Cool Way of Earning Money", "Get Paid 0.02$ for Browsing or Downloading Content Online", R.drawable.wallet);
 
         AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Cheaper Promotion", "Get Responsive and Genuine User at very low price", R.drawable.buuy);

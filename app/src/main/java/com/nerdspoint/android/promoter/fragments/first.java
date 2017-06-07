@@ -42,6 +42,7 @@ public class first extends Fragment {
         catch(Exception e)
         {
 
+
         }
             if(adName!=null)
         {

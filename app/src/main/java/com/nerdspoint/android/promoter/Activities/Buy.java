@@ -156,6 +156,7 @@ public class Buy extends AppCompatActivity {
 
 
 
+
     public String getUrl() {
         return URL;
     }

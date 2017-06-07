@@ -14,6 +14,7 @@ public class taskDetail {
     public String note;
     public String remain;
     public String visited;
+
     public String ImageName;
 
 }

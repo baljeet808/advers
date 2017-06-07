@@ -145,6 +145,7 @@ public class Splash extends AppCompatActivity {
         finish();
     }
 
+
     public void imNew(View view)
     {
         sign_btn.setClickable(true);

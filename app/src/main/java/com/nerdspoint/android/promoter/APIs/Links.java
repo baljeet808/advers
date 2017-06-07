@@ -8,6 +8,7 @@ import android.content.Context;
 
 public class Links {
 
+
     Context context;
     static Links links;
     public String NewLink ="newLink.php";

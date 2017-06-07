@@ -51,6 +51,7 @@ public class Second extends Fragment {
             url.setText(urL);
         }
 
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

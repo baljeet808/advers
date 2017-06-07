@@ -73,6 +73,7 @@ public class WeebView extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
     }
 
     private class MyWebChromeClient extends WebChromeClient {

@@ -33,6 +33,7 @@ public class LinkDetail extends AppCompatActivity {
         Remain = i.getStringExtra("Remain");
 
 
+
         urlNam= (TextView) findViewById(R.id.url_name);
         desc= (TextView) findViewById(R.id.desc);
         remain = (TextView) findViewById(R.id.remain_tv);

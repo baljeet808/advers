@@ -64,6 +64,7 @@ public class Last extends Fragment {
         stateList=bundle.getStringArrayList("state");
 
         urlName.setText(Adname);
+
         url.setText(URL);
         description.setText(Description);
         note.setText(Note);

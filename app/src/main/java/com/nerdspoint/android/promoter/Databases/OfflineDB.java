@@ -37,6 +37,7 @@ public class OfflineDB extends SQLiteOpenHelper{
         String sql = "CREATE TABLE IF NOT EXISTS History (LinkId Integer);";
         db.execSQL(sql);
         db.close();
+
     }
 
     public void insertHistory(String LinkId)

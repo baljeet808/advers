@@ -79,6 +79,7 @@ public class MainPage extends AppCompatActivity{
     {
         if(v.getId()==R.id.task_icon || v.getId()==R.id.task_tv)
         {
+
             Intent i = new Intent(MainPage.this,FragmentHolder.class);
             startActivity(i);
             finish();

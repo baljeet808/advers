@@ -33,6 +33,7 @@ public class FragmentHolder extends AppCompatActivity {
 
         Tasks task = new Tasks();
 
+
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.frag, task);

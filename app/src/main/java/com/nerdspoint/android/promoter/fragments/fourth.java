@@ -46,6 +46,7 @@ public class fourth extends Fragment {
         catch(Exception e)
         {
 
+
         }
         if(note!=null)
         {

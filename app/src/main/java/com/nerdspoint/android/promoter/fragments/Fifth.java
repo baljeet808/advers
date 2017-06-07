@@ -61,6 +61,8 @@ public class Fifth extends Fragment {
         selectedStates.setAdapter(adapter);
 
 
+
+
         try {
             list1 =((Buy) getActivity()).getStateList();
         }

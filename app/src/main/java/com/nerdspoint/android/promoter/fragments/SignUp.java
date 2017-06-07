@@ -325,6 +325,7 @@ public class SignUp extends Fragment implements View.OnClickListener {
                         {
                             confirm.setError("password doesn't Match");
                             check=1;
+
                         }
                         if(check==0)
                         {
