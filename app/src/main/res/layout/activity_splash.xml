@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blured"
+    tools:context="com.nerdspoint.android.promoter.Activities.Splash"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/Frag_Container"
+        >
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragments"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="120dp"
+        >
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_showcase"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="120dp"
+            >
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/For_logo"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/logo"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/plus"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:visibility="invisible"
+                android:id="@+id/plus"
+                />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:text="ClickBait"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:background="#8826A69A"
+                android:id="@+id/tv_slogan"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#7726A69A"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/For_buttons"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="I'm new"
+                android:textColor="#fff"
+                android:onClick="imNew"
+                android:id="@+id/imnew"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ee26A69A"
+                android:text="Sign In"
+                android:textColor="#fff"
+                android:onClick="SignIn"
+                android:id="@+id/sign_BTN"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ee26A69A"
+                android:text="Skip"
+                android:textColor="#fff"
+                android:onClick="Skip"
+                android:id="@+id/skip"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

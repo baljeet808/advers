@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cc000000"
+    tools:context="com.nerdspoint.android.promoter.fragments.Tasks">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#5526A69A"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Open Link and Earn"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/countTask"
+            android:text="0 new"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="10dp"
+            android:background="#5526A69A"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/task_list"
+
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            >
+            </ListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>>
+    </LinearLayout>
+
+</LinearLayout>

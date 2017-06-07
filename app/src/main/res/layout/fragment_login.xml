@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:id="@+id/login_layout"
+    tools:context="com.nerdspoint.android.promoter.fragments.Login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/Email"
+        android:hint="email"
+        android:textSize="18dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:background="#22000000"
+        android:paddingLeft="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#22000000"
+        android:id="@+id/Password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="numeric password"
+        android:inputType="numberPassword"
+        android:paddingLeft="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/blue_button00"
+        android:text="Sign In"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/signIn_btn"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.2"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:text="Copyright Â© 2017 NerdsPoint All rights reserved."
+    />
+
+</LinearLayout>

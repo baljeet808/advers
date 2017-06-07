@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66000000"
+    android:id="@+id/signUp_layout"
+    tools:context="com.nerdspoint.android.promoter.fragments.SignUp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/Email2"
+        android:hint="email"
+        android:textSize="18dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:background="#22000000"
+        android:paddingLeft="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#22000000"
+        android:id="@+id/name"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="first name"
+        android:paddingLeft="15dp"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#22000000"
+        android:id="@+id/country"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="Country"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="15dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#22000000"
+        android:id="@+id/Password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="8-digit Pin"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.08"
+        android:background="#22000000"
+        android:hint="confirm Pin"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/red_btn"
+        android:text="Sign Up"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/signUp_btn"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Copyright Â© 2017 NerdsPoint All rights reserved."
+        />
+
+
+
+</LinearLayout>
