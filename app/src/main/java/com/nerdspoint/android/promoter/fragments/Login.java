@@ -160,8 +160,9 @@ public class Login extends Fragment implements View.OnClickListener{
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            alert.cancel();
+                                alert.cancel();
                             Blurry.delete((ViewGroup) login_layout.getRootView());
+                            ((Splash)getActivity()).moveToMainPage();
                         }
                     },1500);
 
@@ -177,7 +178,7 @@ public class Login extends Fragment implements View.OnClickListener{
                         Sharedperps.getObject(getActivity()).setEmail(email.getText().toString());
                         Sharedperps.getObject(getActivity()).setIsActive(true);
 
-                        ((Splash)getActivity()).moveToMainPage();
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();

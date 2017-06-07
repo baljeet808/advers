@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.4"
-        android:src="@drawable/desc"
+        android:src="@drawable/note"
         />
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:layout_marginLeft="20dp"
             android:id="@+id/description_et"
             android:textSize="18dp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:hint=" What it is about ?"
             android:gravity="start"
             android:padding="5dp"

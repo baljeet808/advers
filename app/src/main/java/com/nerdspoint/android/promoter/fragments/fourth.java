@@ -69,7 +69,7 @@ public class fourth extends Fragment {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ((Buy)getActivity()).movetothird(null);
             }
         });
 

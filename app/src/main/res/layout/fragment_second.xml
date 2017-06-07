@@ -42,7 +42,7 @@
             android:layout_marginLeft="20dp"
             android:id="@+id/url_et"
             android:textSize="18dp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:hint="e.g. https://www.nerdsPoint.com"
             />
         <Button

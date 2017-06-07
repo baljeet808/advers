@@ -111,6 +111,7 @@
                 android:layout_weight="1"
                 android:background="#ee26A69A"
                 android:text="Skip"
+                android:visibility="gone"
                 android:textColor="#fff"
                 android:onClick="Skip"
                 android:id="@+id/skip"

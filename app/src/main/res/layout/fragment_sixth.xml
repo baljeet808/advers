@@ -41,13 +41,15 @@
             android:layout_weight="0.3"
             android:background="#eeffffff"
             android:elevation="10dp"
+
+            android:inputType="number"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:hint=" minimum 50 users"
             android:id="@+id/User_strength"
             android:textSize="18dp"
-            android:textColor="#fff"
+            android:textColor="#000"
             />
         <TextView
             android:layout_width="match_parent"

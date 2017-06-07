@@ -41,7 +41,7 @@
             android:layout_marginLeft="20dp"
             android:id="@+id/note_et"
             android:textSize="18dp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:hint="e.g. Please Download my app from given app link."
             android:gravity="start"
             android:padding="5dp"

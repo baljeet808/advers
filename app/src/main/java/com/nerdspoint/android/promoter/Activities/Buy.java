@@ -15,19 +15,21 @@ import com.nerdspoint.android.promoter.fragments.Third;
 import com.nerdspoint.android.promoter.fragments.first;
 import com.nerdspoint.android.promoter.fragments.fourth;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.jar.Attributes;
 
 public class Buy extends AppCompatActivity {
 
-    String Adname;
-    String URL;
-    String Description;
-    String Note;
-    String Money;
+    String Adname=null;
+    String URL=null;
+    String Description=null;
+    String Note=null;
+    String Money=null;
 
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-    private List<String> stateList;
+    private List<String> stateList=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +40,7 @@ public class Buy extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
-        fragmentTransaction.add(R.id.fragments, f);
+        fragmentTransaction.add(R.id.frags, f);
         fragmentTransaction.commit();
 
     }
@@ -49,8 +50,8 @@ public class Buy extends AppCompatActivity {
         first f =  new first();
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
-        fragmentTransaction.replace(R.id.fragments, f);
+  /*      fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);*/
+        fragmentTransaction.replace(R.id.frags, f);
         fragmentTransaction.commit();
     }
 
@@ -69,7 +70,7 @@ public class Buy extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
+      //  fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,second);
         fragmentTransaction.commit();
 
@@ -88,7 +89,7 @@ public class Buy extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
+      //  fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,third);
         fragmentTransaction.commit();
 
@@ -103,7 +104,7 @@ public class Buy extends AppCompatActivity {
         fourth f = new fourth();
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+      //  fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,f);
         fragmentTransaction.commit();
 
@@ -118,7 +119,7 @@ public class Buy extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction= fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+      //  fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,fifth);
         fragmentTransaction.commit();
 
@@ -134,7 +135,7 @@ public class Buy extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+      //  fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,sixth);
         fragmentTransaction.commit();
     }
@@ -147,7 +148,7 @@ public class Buy extends AppCompatActivity {
         Last last = new Last();
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+     //   fragmentTransaction.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
         fragmentTransaction.replace(R.id.frags,last);
         fragmentTransaction.commit();
 
@@ -159,6 +160,19 @@ public class Buy extends AppCompatActivity {
         return URL;
     }
 
+    public Bundle getvalues()
+    {
+        Bundle bundle = new Bundle();
+        bundle.putString("urlName",Adname );
+        bundle.putString("url",URL);
+        bundle.putString("desc",Description);
+        bundle.putString("Note",Note);
+        bundle.putString("Money",Money);
+        bundle.putStringArrayList("state",(ArrayList<String>) stateList);
+
+        return bundle;
+    }
+
     public String getdescription() {
         return Description;
     }
@@ -168,4 +182,11 @@ public class Buy extends AppCompatActivity {
     }
 
 
+    public List<String> getStateList() {
+        return stateList;
+    }
+
+    public String getMoney() {
+        return Money;
+    }
 }

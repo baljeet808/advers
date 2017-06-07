@@ -84,9 +84,9 @@ public class MainPage extends AppCompatActivity{
             finish();
         }else if(v.getId()==R.id.buy_icon || v.getId()==R.id.buy_tv)
         {
-           /* Intent i = new Intent(MainPage.this,WeebView.class);
+            Intent i = new Intent(MainPage.this,Buy.class);
             startActivity(i);
-            finish();*/
+            finish();
 
             }else if(v.getId()==R.id.passbook_icon || v.getId()==R.id.passbook_tv)
         {
